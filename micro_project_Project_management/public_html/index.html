@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Project Management Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header text-center">
+                <h2>Project Management Form</h2>
+            </div>
+            <form id="project-form" method="get">
+                <div class="form-group">
+                    <label >Project ID:</label> 
+                    <input type="text"  class="form-control"  onchange="getProject()">
+                </div>
+                <div class="form-group">
+                    <label >Project Name</label> 
+                    <input type="text" class="form-control" id="ProjectName">
+                </div>
+                <div class="form-group">
+                    <label >Assigned To</label> 
+                    <input type="text" class="form-control" id="Assignedto">
+                </div>
+                <div class="form-group">
+                    <label >Assignment Date</label> 
+                    <input type="date" class="form-control" id="AssignmentDate" >
+                </div>
+                <div class="form-group">
+                    <label >Deadline</label> 
+                    <input type="date" class="form-control" id="Deadline" >
+                </div>
+                <div class="form-group text-center">
+               <input type="button" class="btn btn-primary" id="save" value="Save Project"
+                           onclick="SaveProject();" >
+                    <input type="button" class="btn btn-primary" id="reset" value="Reset Information"
+                           onclick="resetForm();" >
+                    <input type="button" class="btn btn-primary" id="update" value="Update Information"
+                           onclick="UpdateProject();" >
+                </div>
+            </form>
+        </div>
+        <script  src="https://login2explore.com/jpdb/resources/js/0.0.4/jpdb-commons.js"></script>
+        <script  src="index.js"></script>
+
+            
+    </body>
+</html>
+
+
+
